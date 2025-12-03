@@ -2,14 +2,7 @@
 **LMS-Learning-Management-System**
 
 ## Deskripsi
-Jelaskan secara singkat tujuan project:  
-- Apa yang project ini lakukan  
-- Masalah apa yang diselesaikan  
-- Kenapa project ini penting  
+Learning Management System (LMS) adalah sebuah platform perangkat lunak yang digunakan untuk mengelola, menyampaikan, dan memantau proses pembelajaran secara online pada SMK al-falah.
 
-Contoh:  
-> Project ini adalah aplikasi sederhana untuk mengelola catatan harian dengan antarmuka yang ramah pengguna.
-
----
-
-## 📂 Struktur Folder
+Dibuat Menggunakan:  
+> HTML, CSS, PHP, MySql.
