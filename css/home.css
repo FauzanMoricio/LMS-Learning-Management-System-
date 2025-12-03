@@ -1,0 +1,94 @@
+/* General Reset */
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+}
+
+/* Body Style */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 150vh; /* Ensures the body takes the full height */
+    background-color: #f8f9fa;
+}
+
+/* Background Container */
+.background {
+    flex: 1; /* Expands to fill available space */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Background Image */
+.background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Ensures the background covers the entire content */
+    background-image: url('../uploads/gambar/bgalfalah.jpg'); /* Correct relative path */
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px) brightness(50%);
+    z-index: -1;
+}
+
+/* Heading Styles */
+h2 {
+    color: #343a40;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* Info Section */
+.info-section {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent for readability */
+    padding: 2rem;
+    border-radius: 0.5rem;
+    max-width: 800px;
+    margin: 0 auto; /* Centering the info section */
+}
+
+.info-content h3 {
+    font-size: 1.75rem;
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+.info-content p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content {
+        width: 95%;
+        padding: 1rem;
+    }
+}

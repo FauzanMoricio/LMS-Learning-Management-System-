@@ -1,0 +1,300 @@
+html, body {
+    height: 100%; /* Pastikan body memiliki tinggi 100% */
+    margin: 0; /* Menghapus margin default */
+}
+
+.container h1 {
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 2rem; /* Jarak antara h1 dan kartu */
+}
+
+.container h2 {
+    font-weight: bold;
+    color: #000000;
+    text-align: left;
+    margin-bottom: 2rem; /* Jarak antara h1 dan kartu */
+}
+
+/* Form Card Container */
+.form-card {
+    background-color: #ffffff; /* Warna latar belakang kartu */
+    border: 1px solid #ddd; /* Border abu-abu pada kartu */
+    border-radius: 0.5rem; /* Sudut membulat pada kartu */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan halus di bawah kartu */
+    padding: 1.5rem; /* Jarak di dalam kartu */
+    max-width: 900px; /* Lebar maksimum kartu */
+    width: 80%; /* Lebar kartu 80% dari kontainer induk */
+    margin: 0 auto; /* Pusatkan kartu secara horizontal */
+}
+
+.form-card.hidden {
+    opacity: 0; /* Menyembunyikan formulir */
+    visibility: hidden; /* Menyembunyikan formulir */
+}
+
+.form-card.show {
+    opacity: 1; /* Menampilkan formulir */
+    visibility: visible; /* Menampilkan formulir */
+}
+
+/* Heading */
+.form-card h2 {
+    color: #000000; /* Warna heading */
+    border-bottom: 1px solid #007bff; /* Garis bawah warna heading */
+    padding-bottom: 10px; /* Jarak bawah heading */
+    margin-bottom: 20px; /* Jarak bawah heading */
+    text-align: center; /* Menyentrasikan teks heading */
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 1rem; /* Jarak bawah setiap grup formulir */
+}
+
+.form-group label {
+    display: block; /* Menampilkan label sebagai blok */
+    margin-bottom: 0.5rem; /* Jarak bawah label */
+    font-weight: bold; /* Menebalkan font label */
+    color: #333; /* Warna teks label */
+}
+
+.form-group input,
+.form-group select {
+    height: 46px;
+    width: 100%; /* Lebar input dan select 100% dari kontainer */
+    padding: 0.75rem; /* Jarak di dalam input dan select */
+    border: 1px solid #ccc; /* Border abu-abu pada input dan select */
+    border-radius: 4px; /* Sudut membulat pada input dan select */
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); /* Bayangan dalam pada input dan select */
+    font-size: 1rem; /* Ukuran font input dan select */
+}
+
+/* Button */
+/* Styling umum untuk semua tombol */
+.btn {
+    padding: 10px 20px; /* Padding dalam tombol */
+    border-radius: 0.25rem; /* Membulatkan sudut tombol */
+    font-size: 16px; /* Ukuran font */
+    font-weight: 500; /* Ketebalan font */
+    color: #fff; /* Warna teks */
+    text-align: center;
+    text-decoration: none; /* Menghilangkan garis bawah */
+    display: inline-block; /* Menampilkan tombol sebagai blok inline */
+    margin-right: 10px; /* Jarak antar tombol */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Efek transisi */
+}
+
+/* Warna latar belakang dan border khusus untuk tombol Edit */
+.btn-warning {
+    background-color: #ffc107;
+    border: 1px solid #ffc107;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+    border-color: #d39e00;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Warna latar belakang dan border khusus untuk tombol Hapus */
+.btn-danger {
+    background-color: #dc3545;
+    border: 1px solid #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Warna latar belakang dan border khusus untuk tombol Lihat Topik */
+.btn-info {
+    background-color: #17a2b8;
+    border: 1px solid #17a2b8;
+}
+
+.btn-info:hover {
+    background-color: #138496;
+    border-color: #117a8b;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsif: menyesuaikan padding dan margin untuk layar kecil */
+@media (max-width: 576px) {
+    .btn {
+        padding: 10px 16px;
+        margin-bottom: 10px; /* Menambahkan margin bawah antar tombol */
+        margin-right: 0; /* Menghilangkan margin kanan pada layar kecil */
+    }
+}
+
+
+/* Table Container */
+.table-container {
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+/* Tabel */
+.table {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.table th {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.table td {
+    text-align: center;
+    color: #495057;
+}
+
+
+/* Tombol tambah tahun ajaran */
+.btn-primary {
+    background-color: #28a745;
+    border-color: #28a745;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #218838;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Tombol Edit dan Hapus */
+.btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #212529;
+    font-weight: bold;
+    padding: 15px 15px;
+    border-radius: 5px;
+    margin-right: 5px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: #fff;
+    font-weight: bold;
+    padding: 15px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+* Modal Edit */
+.modal-content {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+    background-color: #343a40;
+    color: #fff;
+    border-bottom: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.modal-title {
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.modal-body {
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.modal-footer .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.modal-footer .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Input form dalam modal */
+.modal-body .form-control {
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    font-size: 16px;
+}
+
+
+
+/* EDIT MAPEL */
+
+label{
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+select.form-control {
+    border: 1px solid #0e6fcf;
+    border-radius: 0.375rem;
+    padding: 0.375rem 0.75rem;
+    background-color: #fff;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+select.form-control:focus {
+    border-color: #000000;
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+}
+
+
+input.form-control {
+    border: 1px solid #0e6fcf;
+    border-radius: 0.375rem;
+    padding: 0.375rem 0.75rem;
+    background-color: #fff;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+textarea.form-control {
+    border: 1px solid #0e6fcf;
+    border-radius: 0.375rem;
+    padding: 0.375rem 0.75rem;
+    background-color: #fff;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+input.form-control:focus {
+    border-color: #000000;
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+}
+
+

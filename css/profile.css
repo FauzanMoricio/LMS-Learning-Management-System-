@@ -1,0 +1,97 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style untuk container utama */
+#mainContent {
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+/* Style untuk card utama */
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Untuk lebar penuh kontainer induk */
+    max-width: 1000px; /* Sesuaikan dengan lebar maksimum yang diinginkan */
+    margin: 20px auto; /* Mengatur margin untuk memusatkan card */
+    padding: 20px; /* Menambah padding di dalam card */
+}
+
+/* Layout untuk card-header dan konten lainnya di dalam card */
+.row.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.card-header {
+    text-align: center;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+}
+
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Styling untuk list group */
+.list-group {
+    border-radius: 10px;
+    overflow: hidden; /* Menghilangkan overflow */
+    box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.1); 
+
+}
+
+.list-group-item.custom {
+    background-color: #f8f9fa; 
+    border: 1px solid #e6e0e0; 
+    padding: 10px 15px; 
+    transition: background-color 0.3s, color 0.3s; 
+    margin-top: 15px;
+}
+
+/* Styling untuk tautan dalam list item */
+.list-group-item.custom a {
+    text-decoration: none; 
+    color: #504e4e !important;
+    font-weight: bolder;
+    transition: color 0.3s; 
+}
+
+/* Efek hover untuk list item */
+.list-group-item.custom:hover {
+    background-color: #e2e6ea; /
+}
+
+.list-group-item.custom a:hover {
+    color: #007bff;
+}
+
+/* Style untuk form */
+label {
+    margin-top: 10px;
+    padding-left: 5px;
+}
+
+.form-control {
+    margin-bottom: 1rem;
+}
+
+/* Style untuk tombol simpan */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 10px 20px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
